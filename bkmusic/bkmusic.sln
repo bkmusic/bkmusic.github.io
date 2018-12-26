@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "bkmusic", "bkmusic\", "{71927B1B-4B8B-4DCC-8917-CD0AF99F3854}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		ProjectReferences = "{20ab766e-bbee-487f-9238-0ad7df8e6451}|bkmusic.dal.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53907"
+		Debug.AspNetCompiler.PhysicalPath = "bkmusic\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53907\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53907"
+		Release.AspNetCompiler.PhysicalPath = "bkmusic\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53907\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53907"
+		SlnRelativePath = "bkmusic\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bkmusic.dal", "bkmusic.dal\bkmusic.dal.csproj", "{20AB766E-BBEE-487F-9238-0AD7DF8E6451}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71927B1B-4B8B-4DCC-8917-CD0AF99F3854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71927B1B-4B8B-4DCC-8917-CD0AF99F3854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71927B1B-4B8B-4DCC-8917-CD0AF99F3854}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{71927B1B-4B8B-4DCC-8917-CD0AF99F3854}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{20AB766E-BBEE-487F-9238-0AD7DF8E6451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20AB766E-BBEE-487F-9238-0AD7DF8E6451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20AB766E-BBEE-487F-9238-0AD7DF8E6451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20AB766E-BBEE-487F-9238-0AD7DF8E6451}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2DBD012-9F84-469D-8D87-813886D78C0E}
+	EndGlobalSection
+EndGlobal
