@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="cataCaSi.ascx.cs" Inherits="Admin_CaSi_cataCaSi" %>
 
-<div>Danh Sach Bai Hat</div>
+<div>Danh Sach Ca Si</div>
 <asp:MultiView ID="mul" runat="server" ActiveViewIndex="0">
         <asp:View ID="v1" runat="server">
 <div>
@@ -12,6 +12,7 @@
                     <td style="width: 100px;">Gioi Tinh</td>
                     <td style="width: 100px;">Ngay Sinh</td>
                     <td style="width: 200px;">Mo Ta</td>
+                    <td style="width: 200px;">Hinh Anh</td>
                     <td></td>
                 </tr>
         </HeaderTemplate>
@@ -19,8 +20,10 @@
             <tr>
                 <td><asp:LinkButton ID="LinkUpdate" runat="server" CommandName="Update" CommandArgument='<%#:Eval("MaCaSi") %>'><%#:Eval("TenCaSi") %></asp:LinkButton></td>
                 <td><%#:Eval("GioiTinh") %></td>
-                <td><%#:Eval("NgaySinh") %></td>
+                <td ><%#:Eval("NgaySinh").ToString().Substring(0,11) %></td>
                 <td><%#:Eval("MoTa") %></td>
+                <td><img style="width:200px; height:200px" src='<%#:Eval("HinhAnh") %>' /></td>
+                <td><asp:LinkButton ID="LinkDelete" runat="server" CommandName="Delete" CommandArgument='<%#:Eval("MaCaSi") %>'>Delete</asp:LinkButton></td>
             </tr>
         </ItemTemplate>
         <FooterTemplate>
@@ -62,10 +65,16 @@
                         <asp:TextBox ID="tbMoTa" runat="server"></asp:TextBox></td>
                 </tr>
                 <tr>
+                    <td>Hinh Anh</td>
+                    <td>
+                        <asp:FileUpload id="fuHinhAnh" runat="server" />
+                </tr>
+                <tr>
                     <td></td>
                     <td>
                         <asp:Button ID="btnSave" runat="server" Text="Cap Nhat" OnClick="btnSave_Click" /></td>
                 </tr>
+
             </table>
         </asp:View>
 </asp:MultiView>
